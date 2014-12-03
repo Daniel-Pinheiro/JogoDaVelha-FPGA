@@ -8,7 +8,19 @@
 <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/Daniel/Documents/UnB/Sistemas Digitais 2/Trabalhos/final/SD2Projeto/debouncer.vhd&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/Daniel/Documents/UnB/Sistemas Digitais 2/Trabalhos/final/JogoDaVelha/conversor_bcd.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">C:/Users/Daniel/Documents/UnB/Sistemas Digitais 2/Trabalhos/final/JogoDaVelha/conversor_bcd.vhd</arg>&quot; Line <arg fmt="%d" index="2">8</arg>. <arg fmt="%s" index="3">Syntax error near &quot;)&quot;.</arg>
+</msg>
+
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/Daniel/Documents/UnB/Sistemas Digitais 2/Trabalhos/final/JogoDaVelha/top_lvl.vhd&quot; into library work</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">C:/Users/Daniel/Documents/UnB/Sistemas Digitais 2/Trabalhos/final/JogoDaVelha/top_lvl.vhd</arg>&quot; Line <arg fmt="%d" index="2">39</arg>. <arg fmt="%s" index="3">Syntax error near &quot;signal&quot;.</arg>
+</msg>
+
+<msg type="error" file="ProjectMgmt" num="806" >&quot;<arg fmt="%s" index="1">C:/Users/Daniel/Documents/UnB/Sistemas Digitais 2/Trabalhos/final/JogoDaVelha/top_lvl.vhd</arg>&quot; Line <arg fmt="%d" index="2">48</arg>. <arg fmt="%s" index="3">Syntax error near &quot;end&quot;.</arg>
 </msg>
 
 </messages>
