@@ -4,7 +4,7 @@ USE ieee.std_logic_1164.ALL;
 ENTITY Conversor_binario_bcd is
 	PORT (  entrada   : in  std_logic_vector(7 downto 0);
 			  unidade   : out std_logic_vector(3 downto 0);
-			  dezena    : out std_logic_vector(3 downto 0);
+			  dezena    : out std_logic_vector(3 downto 0)
 			);
 END ENTITY Conversor_binario_bcd;
 
