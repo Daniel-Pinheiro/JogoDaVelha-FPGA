@@ -6,12 +6,15 @@ entity Top_level is
            Jogada : in  STD_LOGIC_VECTOR (9 downto 1);
            Leds1 : out  STD_LOGIC_VECTOR (9 downto 1);
            Leds2 : out  STD_LOGIC_VECTOR (9 downto 1);
-			  Digito  : in  STD_LOGIC_VECTOR (6 downto 0);
-			  Display, Ponto : out  STD_LOGIC;
+			  Digito  : out  STD_LOGIC_VECTOR (6 downto 0);
+			  Displays : out  STD_LOGIC_VECTOR (3 downto 0);
+			  Ponto : out  STD_LOGIC;
            Invalido : out  STD_LOGIC);
 	end Top_level;
 
 architecture Jogo_Velha of Top_level is
+
+-----------------------------------------------------------------Componentes---------------------------
 	
 	component debouncer is 
 		Port (clk, reset  : in  STD_LOGIC;
@@ -38,13 +41,19 @@ architecture Jogo_Velha of Top_level is
 				displays 										: out  STD_LOGIC_VECTOR(4 DOWNTO 1);
 				ponto 											: out  STD_LOGIC);
 	end component;
-			  
+
+-----------------------------------------------------------------Sinais--------------------------------
+
 	signal aumenta_placar1, aumenta_placar2: STD_LOGIC;
 	signal s_jogada :  STD_LOGIC_VECTOR (9 downto 1);
 	signal placar1, placar2 :  STD_LOGIC_VECTOR (7 downto 0);
-	signal placar1_unidade, placar1_dezena, placar2_unidade, placar1_dezena :  STD_LOGIC_VECTOR (3 downto 0);
+	signal placar1_unidade, placar1_dezena, placar2_unidade, placar2_dezena :  STD_LOGIC_VECTOR (3 downto 0);
 	signal primeira_casa, segunda_casa, terceira_casa, quarta_casa :  STD_LOGIC_VECTOR (6 downto 0);
+	
+-------------------------------------------------------------------------------------------------------
 begin
+
+-----------------------------------------------------------------Tratamento de entradas------------------
 	
 	Button1: debouncer port map(Clk, '0', Jogada(1), s_jogada(1));
 	Button2: debouncer port map(Clk, '0', Jogada(2), s_jogada(2));
@@ -55,16 +64,34 @@ begin
 	Button7: debouncer port map(Clk, '0', Jogada(7), s_jogada(7));
 	Button8: debouncer port map(Clk, '0', Jogada(8), s_jogada(8));
 	Button9: debouncer port map(Clk, '0', Jogada(9), s_jogada(9));
+
+-----------------------------------------------------------------Bloco logico-----------------------------------
 	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+-----------------------------------------------------------------Conexões do placar------------------------------
+
 	ConvPlacar1: conversor_binario_bcd port map(placar1, placar1_unidade, placar1_dezena);
-	ConvPlacar2: conversor_binario_bcd port map(placar2, placar2_unidade, placar1_dezena);
+	ConvPlacar2: conversor_binario_bcd port map(placar2, placar2_unidade, placar2_dezena);
 	
 	DecodPlacar1uni: Decodificador_7segmentos port map(placar1_unidade, '0', quarta_casa);
 	DecodPlacar1dez: Decodificador_7segmentos port map(placar1_dezena, '0', terceira_casa);
 	DecodPlacar2uni: Decodificador_7segmentos port map(placar2_unidade, '0', segunda_casa);
 	DecodPlacar2dez: Decodificador_7segmentos port map(placar2_dezena, '0', primeira_casa);
 	
-	DisplayPlacar: multplex_displays port map (Clk, primeira_casa, segunda_casa, terceira_casa, quarta_casa, Digito, Display, Ponto);
+	DisplayPlacar: multplex_displays port map (Clk, primeira_casa, segunda_casa, terceira_casa, quarta_casa, Digito, Displays, Ponto);
+
+--------------------------------------------------------------------------------------------------------
 
 end Jogo_Velha;
-
