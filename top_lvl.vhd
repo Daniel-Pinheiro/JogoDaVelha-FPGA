@@ -2,7 +2,7 @@ library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
 entity Top_level is
-    Port ( Reset, Clk : in  STD_LOGIC;
+    Port ( Reset, Two_plays, Clk : in  STD_LOGIC;
            Jogada : in  STD_LOGIC_VECTOR (9 downto 1);
            Leds1 : out  STD_LOGIC_VECTOR (9 downto 1);
            Leds2 : out  STD_LOGIC_VECTOR (9 downto 1);
@@ -79,7 +79,7 @@ begin
 	
 	
 	
-	
+	UnidadeControle: Maquina_Estados port map(Reset, Two_plays, Jogada, Leds1,Leds2, Invalido, placar1, placar2);
 -----------------------------------------------------------------Conexões do placar------------------------------
 
 	ConvPlacar1: conversor_binario_bcd port map(placar1, placar1_unidade, placar1_dezena);
