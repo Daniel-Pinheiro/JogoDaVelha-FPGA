@@ -1,0 +1,3 @@
+vhdl work "contador_50Mhz_1s.vhd"
+vhdl work "maquina.vhd"
+vhdl work "FSM-tb.vhd"

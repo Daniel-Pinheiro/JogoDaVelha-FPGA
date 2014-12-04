@@ -1,0 +1,14 @@
+AR multplex_displays behavioral C:/Users/Aluno/Documents/Alunos/FPGA/2014/Projeto-SD2-master/multplex_displays.vhd sub00/vhpl11 1417708582
+AR debouncer behavioral C:/Users/Aluno/Documents/Alunos/FPGA/2014/Projeto-SD2-master/debouncer.vhd sub00/vhpl03 1417708574
+AR maquina behavioral C:/Users/Aluno/Documents/Alunos/FPGA/2014/Projeto-SD2-master/maquina.vhd sub00/vhpl05 1417715633
+AR decodificador_7segmentos arch C:/Users/Aluno/Documents/Alunos/FPGA/2014/Projeto-SD2-master/decodificador_7.vhd sub00/vhpl09 1417708580
+AR conversor_binario_bcd arch C:/Users/Aluno/Documents/Alunos/FPGA/2014/Projeto-SD2-master/conversor_bcd.vhd sub00/vhpl07 1417708578
+EN conversor_binario_bcd NULL C:/Users/Aluno/Documents/Alunos/FPGA/2014/Projeto-SD2-master/conversor_bcd.vhd sub00/vhpl06 1417708577
+EN decodificador_7segmentos NULL C:/Users/Aluno/Documents/Alunos/FPGA/2014/Projeto-SD2-master/decodificador_7.vhd sub00/vhpl08 1417708579
+AR conta_1s behavioral C:/Users/Aluno/Documents/Alunos/FPGA/2014/Projeto-SD2-master/contador_50Mhz_1s.vhd sub00/vhpl01 1417715631
+EN conta_1s NULL C:/Users/Aluno/Documents/Alunos/FPGA/2014/Projeto-SD2-master/contador_50Mhz_1s.vhd sub00/vhpl00 1417715630
+AR top_level jogo_velha C:/Users/Aluno/Documents/Alunos/FPGA/2014/Projeto-SD2-master/top_lvl.vhd sub00/vhpl13 1417708584
+EN multplex_displays NULL C:/Users/Aluno/Documents/Alunos/FPGA/2014/Projeto-SD2-master/multplex_displays.vhd sub00/vhpl10 1417708581
+EN maquina NULL C:/Users/Aluno/Documents/Alunos/FPGA/2014/Projeto-SD2-master/maquina.vhd sub00/vhpl04 1417715632
+EN debouncer NULL C:/Users/Aluno/Documents/Alunos/FPGA/2014/Projeto-SD2-master/debouncer.vhd sub00/vhpl02 1417708573
+EN top_level NULL C:/Users/Aluno/Documents/Alunos/FPGA/2014/Projeto-SD2-master/top_lvl.vhd sub00/vhpl12 1417708583

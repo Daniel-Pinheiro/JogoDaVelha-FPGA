@@ -1,0 +1,8 @@
+vhdl isim_temp "contador_50Mhz_1s.vhd"
+vhdl isim_temp "multplex_displays.vhd"
+vhdl isim_temp "maquina.vhd"
+vhdl isim_temp "decodificador_7.vhd"
+vhdl isim_temp "debouncer.vhd"
+vhdl isim_temp "conversor_bcd.vhd"
+vhdl isim_temp "top_lvl.vhd"
+vhdl isim_temp "Top_tb.vhd"

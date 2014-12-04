@@ -1,9 +1,9 @@
 <?xml version='1.0' encoding='UTF-8'?>
 <report-views version="2.0" >
  <header>
-  <DateModified>2014-12-04T00:36:53</DateModified>
+  <DateModified>2014-12-04T21:11:23</DateModified>
   <ModuleName>Top_level</ModuleName>
-  <SummaryTimeStamp>Unknown</SummaryTimeStamp>
+  <SummaryTimeStamp>2014-12-04T14:02:10</SummaryTimeStamp>
   <SavedFilePath>C:/Users/Daniel/Documents/UnB/Sistemas Digitais 2/Trabalhos/final/JogoDaVelha/iseconfig/Top_level.xreport</SavedFilePath>
   <ImplementationReportsDirectory>C:/Users/Daniel/Documents/UnB/Sistemas Digitais 2/Trabalhos/final/JogoDaVelha\</ImplementationReportsDirectory>
   <DateInitialized>2014-12-03T18:29:41</DateInitialized>
@@ -11,7 +11,7 @@
  </header>
  <body>
   <viewgroup label="Design Overview" >
-   <view inputState="Unknown" program="implementation" ShowPartitionData="false" type="FPGASummary" file="Conversor_binario_bcd_summary.html" label="Summary" >
+   <view inputState="Unknown" program="implementation" ExpandErrors="false" ShowPartitionData="false" type="FPGASummary" file="Conversor_binario_bcd_summary.html" label="Summary" ExpandWarnings="false" >
     <toc-item title="Design Overview" target="Design Overview" />
     <toc-item title="Design Utilization Summary" target="Design Utilization Summary" />
     <toc-item title="Performance Summary" target="Performance Summary" />

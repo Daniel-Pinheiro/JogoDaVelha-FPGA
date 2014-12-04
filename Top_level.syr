@@ -1,0 +1,722 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.07 secs
+ 
+--> Reading design: Top_level.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Top_level.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Top_level"
+Output Format                      : NGC
+Target Device                      : xc3s200-4-ft256
+
+---- Source Options
+Top Module Name                    : Top_level
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "C:/Users/Aluno/Documents/Alunos/FPGA/2014/Projeto-SD2-master/contador_50Mhz_1s.vhd" in Library work.
+Architecture behavioral of Entity conta_1s is up to date.
+Compiling vhdl file "C:/Users/Aluno/Documents/Alunos/FPGA/2014/Projeto-SD2-master/debouncer.vhd" in Library work.
+Architecture behavioral of Entity debouncer is up to date.
+Compiling vhdl file "C:/Users/Aluno/Documents/Alunos/FPGA/2014/Projeto-SD2-master/maquina.vhd" in Library work.
+Architecture behavioral of Entity maquina is up to date.
+Compiling vhdl file "C:/Users/Aluno/Documents/Alunos/FPGA/2014/Projeto-SD2-master/conversor_bcd.vhd" in Library work.
+Architecture arch of Entity conversor_binario_bcd is up to date.
+Compiling vhdl file "C:/Users/Aluno/Documents/Alunos/FPGA/2014/Projeto-SD2-master/decodificador_7.vhd" in Library work.
+Architecture arch of Entity decodificador_7segmentos is up to date.
+Compiling vhdl file "C:/Users/Aluno/Documents/Alunos/FPGA/2014/Projeto-SD2-master/multplex_displays.vhd" in Library work.
+Architecture behavioral of Entity multplex_displays is up to date.
+Compiling vhdl file "C:/Users/Aluno/Documents/Alunos/FPGA/2014/Projeto-SD2-master/top_lvl.vhd" in Library work.
+Architecture jogo_velha of Entity top_level is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <Top_level> in library <work> (architecture <jogo_velha>).
+
+Analyzing hierarchy for entity <debouncer> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <maquina> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <conversor_binario_bcd> in library <work> (architecture <arch>).
+
+Analyzing hierarchy for entity <decodificador_7segmentos> in library <work> (architecture <arch>).
+
+Analyzing hierarchy for entity <multplex_displays> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <conta_1s> in library <work> (architecture <behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <Top_level> in library <work> (Architecture <jogo_velha>).
+Entity <Top_level> analyzed. Unit <Top_level> generated.
+
+Analyzing Entity <debouncer> in library <work> (Architecture <behavioral>).
+Entity <debouncer> analyzed. Unit <debouncer> generated.
+
+Analyzing Entity <maquina> in library <work> (Architecture <behavioral>).
+Entity <maquina> analyzed. Unit <maquina> generated.
+
+Analyzing Entity <conta_1s> in library <work> (Architecture <behavioral>).
+INFO:Xst:2679 - Register <terminou> in unit <conta_1s> has a constant value of 1 during circuit operation. The register is replaced by logic.
+Entity <conta_1s> analyzed. Unit <conta_1s> generated.
+
+Analyzing Entity <conversor_binario_bcd> in library <work> (Architecture <arch>).
+Entity <conversor_binario_bcd> analyzed. Unit <conversor_binario_bcd> generated.
+
+Analyzing Entity <decodificador_7segmentos> in library <work> (Architecture <arch>).
+Entity <decodificador_7segmentos> analyzed. Unit <decodificador_7segmentos> generated.
+
+Analyzing Entity <multplex_displays> in library <work> (Architecture <behavioral>).
+Entity <multplex_displays> analyzed. Unit <multplex_displays> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <debouncer>.
+    Related source file is "C:/Users/Aluno/Documents/Alunos/FPGA/2014/Projeto-SD2-master/debouncer.vhd".
+    Found 1-bit register for signal <pb_debounced>.
+    Found 19-bit down counter for signal <count500000>.
+    Found 1-bit xor2 for signal <pb_debounced$xor0000> created at line 64.
+    Found 1-bit register for signal <pb_sampled>.
+    Summary:
+	inferred   1 Counter(s).
+	inferred   2 D-type flip-flop(s).
+Unit <debouncer> synthesized.
+
+
+Synthesizing Unit <conversor_binario_bcd>.
+    Related source file is "C:/Users/Aluno/Documents/Alunos/FPGA/2014/Projeto-SD2-master/conversor_bcd.vhd".
+    Found 128x8-bit ROM for signal <$rom0000>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <conversor_binario_bcd> synthesized.
+
+
+Synthesizing Unit <decodificador_7segmentos>.
+    Related source file is "C:/Users/Aluno/Documents/Alunos/FPGA/2014/Projeto-SD2-master/decodificador_7.vhd".
+    Found 16x7-bit ROM for signal <seg_tmp>.
+    Summary:
+	inferred   1 ROM(s).
+Unit <decodificador_7segmentos> synthesized.
+
+
+Synthesizing Unit <multplex_displays>.
+    Related source file is "C:/Users/Aluno/Documents/Alunos/FPGA/2014/Projeto-SD2-master/multplex_displays.vhd".
+    Found 4-bit register for signal <displays>.
+    Found 7-bit register for signal <digito>.
+    Found 1-bit register for signal <ponto>.
+    Found 16-bit register for signal <contagem>.
+    Found 16-bit adder for signal <contagem$addsub0000> created at line 20.
+    Summary:
+	inferred  28 D-type flip-flop(s).
+	inferred   1 Adder/Subtractor(s).
+Unit <multplex_displays> synthesized.
+
+
+Synthesizing Unit <conta_1s>.
+    Related source file is "C:/Users/Aluno/Documents/Alunos/FPGA/2014/Projeto-SD2-master/contador_50Mhz_1s.vhd".
+WARNING:Xst:1780 - Signal <pb_sampled> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found 19-bit down counter for signal <count500000>.
+    Summary:
+	inferred   1 Counter(s).
+Unit <conta_1s> synthesized.
+
+
+Synthesizing Unit <maquina>.
+    Related source file is "C:/Users/Aluno/Documents/Alunos/FPGA/2014/Projeto-SD2-master/maquina.vhd".
+WARNING:Xst:647 - Input <two_plays> is never used. This port will be preserved and left unconnected if it belongs to a top-level block or it belongs to a sub-block and the hierarchy of this sub-block is preserved.
+WARNING:Xst:653 - Signal <jogadas_vencedoras<8>> is used but never assigned. This sourceless signal will be automatically connected to value 111000000.
+WARNING:Xst:1780 - Signal <jogadas_vencedoras<7:1>> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+    Found finite state machine <FSM_0> for signal <estado>.
+    -----------------------------------------------------------------------
+    | States             | 11                                             |
+    | Transitions        | 18                                             |
+    | Inputs             | 5                                              |
+    | Outputs            | 11                                             |
+    | Clock              | clk                       (rising_edge)        |
+    | Reset              | reset                     (positive)           |
+    | Reset type         | asynchronous                                   |
+    | Reset State        | init                                           |
+    | Power Up State     | init                                           |
+    | Encoding           | automatic                                      |
+    | Implementation     | LUT                                            |
+    -----------------------------------------------------------------------
+    Found 9-bit register for signal <leds1>.
+    Found 9-bit register for signal <leds2>.
+    Found 1-bit register for signal <invalido>.
+    Found 1-bit register for signal <começa>.
+    Found 9-bit register for signal <comparaçao1>.
+    Found 9-bit register for signal <comparaçao2>.
+    Found 9-bit comparator equal for signal <estado$cmp_eq0002> created at line 154.
+    Found 9-bit comparator equal for signal <estado$cmp_eq0003> created at line 154.
+    Found 9-bit register for signal <jogada_vencedora>.
+    Found 9-bit register for signal <play1>.
+    Found 9-bit register for signal <play2>.
+    Found 9-bit register for signal <resultado>.
+    Found 8-bit register for signal <s_placar1>.
+    Found 8-bit adder for signal <s_placar1$addsub0000> created at line 195.
+    Found 8-bit register for signal <s_placar2>.
+    Found 8-bit adder for signal <s_placar2$addsub0000> created at line 197.
+    Found 1-bit register for signal <vez>.
+    Summary:
+	inferred   1 Finite State Machine(s).
+	inferred  91 D-type flip-flop(s).
+	inferred   2 Adder/Subtractor(s).
+	inferred   2 Comparator(s).
+Unit <maquina> synthesized.
+
+
+Synthesizing Unit <Top_level>.
+    Related source file is "C:/Users/Aluno/Documents/Alunos/FPGA/2014/Projeto-SD2-master/top_lvl.vhd".
+WARNING:Xst:646 - Signal <s_jogada> is assigned but never used. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <aumenta_placar2> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+WARNING:Xst:1780 - Signal <aumenta_placar1> is never used or assigned. This unconnected signal will be trimmed during the optimization process.
+Unit <Top_level> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 6
+ 128x8-bit ROM                                         : 2
+ 16x7-bit ROM                                          : 4
+# Adders/Subtractors                                   : 3
+ 16-bit adder                                          : 1
+ 8-bit adder                                           : 2
+# Counters                                             : 10
+ 19-bit down counter                                   : 10
+# Registers                                            : 67
+ 1-bit register                                        : 58
+ 16-bit register                                       : 1
+ 4-bit register                                        : 1
+ 7-bit register                                        : 1
+ 8-bit register                                        : 2
+ 9-bit register                                        : 4
+# Comparators                                          : 2
+ 9-bit comparator equal                                : 2
+# Xors                                                 : 9
+ 1-bit xor2                                            : 9
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Analyzing FSM <FSM_0> for best encoding.
+Optimizing FSM <UnidadeControle/estado/FSM> on signal <estado[1:11]> with one-hot encoding.
+--------------------------------
+ State           | Encoding
+--------------------------------
+ init            | 00000000001
+ aguarda         | 00000000010
+ verifica        | 00000000100
+ outro_jogador   | 00000010000
+ mesmo_lugar     | 00000001000
+ jogada_invalida | 00001000000
+ marca_campo     | 00000100000
+ ganhou          | 00010000000
+ pisca1          | 00100000000
+ pisca2          | 01000000000
+ proximo_jogo    | 10000000000
+--------------------------------
+WARNING:Xst:1290 - Hierarchical block <Button1> is unconnected in block <Top_level>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Button2> is unconnected in block <Top_level>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Button3> is unconnected in block <Top_level>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Button4> is unconnected in block <Top_level>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Button5> is unconnected in block <Top_level>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Button6> is unconnected in block <Top_level>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Button7> is unconnected in block <Top_level>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Button8> is unconnected in block <Top_level>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <Button9> is unconnected in block <Top_level>.
+   It will be removed from the design.
+WARNING:Xst:1290 - Hierarchical block <contador> is unconnected in block <UnidadeControle>.
+   It will be removed from the design.
+INFO:Xst:2261 - The FF/Latch <jogada_vencedora_1> in Unit <UnidadeControle> is equivalent to the following 5 FFs/Latches, which will be removed : <jogada_vencedora_2> <jogada_vencedora_4> <jogada_vencedora_3> <jogada_vencedora_5> <jogada_vencedora_6> 
+INFO:Xst:2261 - The FF/Latch <jogada_vencedora_7> in Unit <UnidadeControle> is equivalent to the following 2 FFs/Latches, which will be removed : <jogada_vencedora_8> <jogada_vencedora_9> 
+WARNING:Xst:1710 - FF/Latch <comparaçao2_6> (without init value) has a constant value of 0 in block <UnidadeControle>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <jogada_vencedora_7> (without init value) has a constant value of 1 in block <UnidadeControle>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <comparaçao2_4> (without init value) has a constant value of 0 in block <UnidadeControle>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <comparaçao2_5> (without init value) has a constant value of 0 in block <UnidadeControle>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <comparaçao2_3> (without init value) has a constant value of 0 in block <UnidadeControle>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <comparaçao2_1> (without init value) has a constant value of 0 in block <UnidadeControle>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <comparaçao2_2> (without init value) has a constant value of 0 in block <UnidadeControle>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <jogada_vencedora_1> (without init value) has a constant value of 0 in block <UnidadeControle>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_placar1_7> (without init value) has a constant value of 0 in block <UnidadeControle>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_placar1_6> (without init value) has a constant value of 0 in block <UnidadeControle>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_placar1_5> (without init value) has a constant value of 0 in block <UnidadeControle>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_placar1_4> (without init value) has a constant value of 0 in block <UnidadeControle>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_placar1_3> (without init value) has a constant value of 0 in block <UnidadeControle>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_placar1_2> (without init value) has a constant value of 0 in block <UnidadeControle>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_placar1_1> (without init value) has a constant value of 0 in block <UnidadeControle>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_placar1_0> (without init value) has a constant value of 0 in block <UnidadeControle>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_placar2_7> (without init value) has a constant value of 0 in block <UnidadeControle>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_placar2_6> (without init value) has a constant value of 0 in block <UnidadeControle>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_placar2_5> (without init value) has a constant value of 0 in block <UnidadeControle>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_placar2_4> (without init value) has a constant value of 0 in block <UnidadeControle>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_placar2_3> (without init value) has a constant value of 0 in block <UnidadeControle>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_placar2_2> (without init value) has a constant value of 0 in block <UnidadeControle>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_placar2_1> (without init value) has a constant value of 0 in block <UnidadeControle>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <s_placar2_0> (without init value) has a constant value of 0 in block <UnidadeControle>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <comparaçao1_5> (without init value) has a constant value of 0 in block <UnidadeControle>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <comparaçao1_4> (without init value) has a constant value of 0 in block <UnidadeControle>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <comparaçao1_6> (without init value) has a constant value of 0 in block <UnidadeControle>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <comparaçao1_2> (without init value) has a constant value of 0 in block <UnidadeControle>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <comparaçao1_1> (without init value) has a constant value of 0 in block <UnidadeControle>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1710 - FF/Latch <comparaçao1_3> (without init value) has a constant value of 0 in block <UnidadeControle>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <FFd1> has a constant value of 0 in block <FSM>. This FF/Latch will be trimmed during the optimization process.
+
+Synthesizing (advanced) Unit <Top_level>.
+INFO:Xst:3044 - The ROM <ConvPlacar2/Mrom__rom0000> will be implemented as a read-only BLOCK RAM, absorbing the register: <UnidadeControle/s_placar2>.
+INFO:Xst:3044 - The ROM <ConvPlacar1/Mrom__rom0000> will be implemented as a read-only BLOCK RAM, absorbing the register: <UnidadeControle/s_placar1>.
+INFO:Xst:3225 - The RAM <ConvPlacar2/Mrom__rom0000> will be implemented as BLOCK RAM
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 128-word x 8-bit                    |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <Clk>           | rise     |
+    |     enA            | connected to signal <Reset>         | low      |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to internal node          |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+INFO:Xst:3225 - The RAM <ConvPlacar1/Mrom__rom0000> will be implemented as BLOCK RAM
+    -----------------------------------------------------------------------
+    | ram_type           | Block                               |          |
+    -----------------------------------------------------------------------
+    | Port A                                                              |
+    |     aspect ratio   | 128-word x 8-bit                    |          |
+    |     mode           | write-first                         |          |
+    |     clkA           | connected to signal <Clk>           | rise     |
+    |     enA            | connected to signal <Reset>         | low      |
+    |     weA            | connected to signal <GND>           | high     |
+    |     addrA          | connected to internal node          |          |
+    |     diA            | connected to signal <GND>           |          |
+    |     doA            | connected to internal node          |          |
+    -----------------------------------------------------------------------
+    | optimization       | speed                               |          |
+    -----------------------------------------------------------------------
+Unit <Top_level> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# RAMs                                                 : 2
+ 128x8-bit single-port block RAM                       : 2
+# ROMs                                                 : 4
+ 16x7-bit ROM                                          : 4
+# Adders/Subtractors                                   : 3
+ 16-bit adder                                          : 1
+ 8-bit adder                                           : 2
+# Counters                                             : 9
+ 19-bit down counter                                   : 9
+# Registers                                            : 148
+ Flip-Flops                                            : 148
+# Comparators                                          : 2
+ 9-bit comparator equal                                : 2
+# Xors                                                 : 9
+ 1-bit xor2                                            : 9
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1710 - FF/Latch <UnidadeControle/comparaçao1_1> (without init value) has a constant value of 0 in block <Top_level>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <UnidadeControle/comparaçao1_2> (without init value) has a constant value of 0 in block <Top_level>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <UnidadeControle/comparaçao1_3> (without init value) has a constant value of 0 in block <Top_level>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <UnidadeControle/comparaçao1_4> (without init value) has a constant value of 0 in block <Top_level>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <UnidadeControle/comparaçao1_5> (without init value) has a constant value of 0 in block <Top_level>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <UnidadeControle/comparaçao1_6> (without init value) has a constant value of 0 in block <Top_level>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <UnidadeControle/comparaçao2_1> (without init value) has a constant value of 0 in block <Top_level>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <UnidadeControle/jogada_vencedora_2> (without init value) has a constant value of 0 in block <Top_level>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <UnidadeControle/jogada_vencedora_1> (without init value) has a constant value of 0 in block <Top_level>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <UnidadeControle/comparaçao2_2> (without init value) has a constant value of 0 in block <Top_level>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <UnidadeControle/jogada_vencedora_3> (without init value) has a constant value of 0 in block <Top_level>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <UnidadeControle/comparaçao2_3> (without init value) has a constant value of 0 in block <Top_level>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <UnidadeControle/jogada_vencedora_4> (without init value) has a constant value of 0 in block <Top_level>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <UnidadeControle/comparaçao2_4> (without init value) has a constant value of 0 in block <Top_level>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <UnidadeControle/jogada_vencedora_5> (without init value) has a constant value of 0 in block <Top_level>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <UnidadeControle/comparaçao2_5> (without init value) has a constant value of 0 in block <Top_level>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <UnidadeControle/jogada_vencedora_6> (without init value) has a constant value of 0 in block <Top_level>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <UnidadeControle/comparaçao2_6> (without init value) has a constant value of 0 in block <Top_level>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <UnidadeControle/jogada_vencedora_7> (without init value) has a constant value of 1 in block <Top_level>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <UnidadeControle/jogada_vencedora_8> (without init value) has a constant value of 1 in block <Top_level>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <UnidadeControle/jogada_vencedora_9> (without init value) has a constant value of 1 in block <Top_level>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1293 - FF/Latch <FSM_FFd1> has a constant value of 0 in block <FSM_0-parent>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:2677 - Node <UnidadeControle/começa> of sequential type is unconnected in block <Top_level>.
+WARNING:Xst:2677 - Node <Button9/pb_sampled> of sequential type is unconnected in block <Top_level>.
+WARNING:Xst:2677 - Node <Button9/pb_debounced> of sequential type is unconnected in block <Top_level>.
+WARNING:Xst:2677 - Node <Button8/pb_sampled> of sequential type is unconnected in block <Top_level>.
+WARNING:Xst:2677 - Node <Button8/pb_debounced> of sequential type is unconnected in block <Top_level>.
+WARNING:Xst:2677 - Node <Button7/pb_sampled> of sequential type is unconnected in block <Top_level>.
+WARNING:Xst:2677 - Node <Button7/pb_debounced> of sequential type is unconnected in block <Top_level>.
+WARNING:Xst:2677 - Node <Button6/pb_sampled> of sequential type is unconnected in block <Top_level>.
+WARNING:Xst:2677 - Node <Button6/pb_debounced> of sequential type is unconnected in block <Top_level>.
+WARNING:Xst:2677 - Node <Button5/pb_sampled> of sequential type is unconnected in block <Top_level>.
+WARNING:Xst:2677 - Node <Button5/pb_debounced> of sequential type is unconnected in block <Top_level>.
+WARNING:Xst:2677 - Node <Button4/pb_sampled> of sequential type is unconnected in block <Top_level>.
+WARNING:Xst:2677 - Node <Button4/pb_debounced> of sequential type is unconnected in block <Top_level>.
+WARNING:Xst:2677 - Node <Button3/pb_sampled> of sequential type is unconnected in block <Top_level>.
+WARNING:Xst:2677 - Node <Button3/pb_debounced> of sequential type is unconnected in block <Top_level>.
+WARNING:Xst:2677 - Node <Button2/pb_sampled> of sequential type is unconnected in block <Top_level>.
+WARNING:Xst:2677 - Node <Button2/pb_debounced> of sequential type is unconnected in block <Top_level>.
+WARNING:Xst:2677 - Node <Button1/pb_sampled> of sequential type is unconnected in block <Top_level>.
+WARNING:Xst:2677 - Node <Button1/pb_debounced> of sequential type is unconnected in block <Top_level>.
+INFO:Xst:2697 - Unit <Top_level> : the RAMs <ConvPlacar1/Mrom__rom0000>, <ConvPlacar2/Mrom__rom0000> are packed into the single block RAM <ConvPlacar1/Mrom__rom00001>
+WARNING:Xst:1710 - FF/Latch <UnidadeControle/s_placar2_0> (without init value) has a constant value of 0 in block <Top_level>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <UnidadeControle/s_placar2_1> (without init value) has a constant value of 0 in block <Top_level>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <UnidadeControle/s_placar2_2> (without init value) has a constant value of 0 in block <Top_level>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <UnidadeControle/s_placar2_3> (without init value) has a constant value of 0 in block <Top_level>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <UnidadeControle/s_placar2_4> (without init value) has a constant value of 0 in block <Top_level>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <UnidadeControle/s_placar2_5> (without init value) has a constant value of 0 in block <Top_level>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <UnidadeControle/s_placar2_6> (without init value) has a constant value of 0 in block <Top_level>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <UnidadeControle/s_placar2_7> (without init value) has a constant value of 0 in block <Top_level>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <UnidadeControle/s_placar1_0> (without init value) has a constant value of 0 in block <Top_level>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <UnidadeControle/s_placar1_1> (without init value) has a constant value of 0 in block <Top_level>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <UnidadeControle/s_placar1_2> (without init value) has a constant value of 0 in block <Top_level>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <UnidadeControle/s_placar1_3> (without init value) has a constant value of 0 in block <Top_level>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <UnidadeControle/s_placar1_4> (without init value) has a constant value of 0 in block <Top_level>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <UnidadeControle/s_placar1_5> (without init value) has a constant value of 0 in block <Top_level>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:1895 - Due to other FF/Latch trimming, FF/Latch <UnidadeControle/s_placar1_7> (without init value) has a constant value of 0 in block <Top_level>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:638 - in unit Top_level Conflict on KEEP property on signal N0 and UnidadeControle/s_placar2_mux0000<7> UnidadeControle/s_placar2_mux0000<7> signal will be lost.
+WARNING:Xst:638 - in unit Top_level Conflict on KEEP property on signal N0 and UnidadeControle/s_placar2_mux0000<6> UnidadeControle/s_placar2_mux0000<6> signal will be lost.
+WARNING:Xst:638 - in unit Top_level Conflict on KEEP property on signal N0 and UnidadeControle/s_placar2_mux0000<5> UnidadeControle/s_placar2_mux0000<5> signal will be lost.
+WARNING:Xst:638 - in unit Top_level Conflict on KEEP property on signal N0 and UnidadeControle/s_placar2_mux0000<4> UnidadeControle/s_placar2_mux0000<4> signal will be lost.
+WARNING:Xst:638 - in unit Top_level Conflict on KEEP property on signal N0 and UnidadeControle/s_placar2_mux0000<3> UnidadeControle/s_placar2_mux0000<3> signal will be lost.
+WARNING:Xst:638 - in unit Top_level Conflict on KEEP property on signal N0 and UnidadeControle/s_placar2_mux0000<2> UnidadeControle/s_placar2_mux0000<2> signal will be lost.
+WARNING:Xst:638 - in unit Top_level Conflict on KEEP property on signal N0 and UnidadeControle/s_placar2_mux0000<1> UnidadeControle/s_placar2_mux0000<1> signal will be lost.
+WARNING:Xst:638 - in unit Top_level Conflict on KEEP property on signal N0 and UnidadeControle/s_placar1_mux0000<7> UnidadeControle/s_placar1_mux0000<7> signal will be lost.
+WARNING:Xst:638 - in unit Top_level Conflict on KEEP property on signal N0 and UnidadeControle/s_placar1_mux0000<6> UnidadeControle/s_placar1_mux0000<6> signal will be lost.
+WARNING:Xst:638 - in unit Top_level Conflict on KEEP property on signal N0 and UnidadeControle/s_placar1_mux0000<5> UnidadeControle/s_placar1_mux0000<5> signal will be lost.
+WARNING:Xst:638 - in unit Top_level Conflict on KEEP property on signal N0 and UnidadeControle/s_placar1_mux0000<4> UnidadeControle/s_placar1_mux0000<4> signal will be lost.
+WARNING:Xst:638 - in unit Top_level Conflict on KEEP property on signal N0 and UnidadeControle/s_placar1_mux0000<3> UnidadeControle/s_placar1_mux0000<3> signal will be lost.
+WARNING:Xst:638 - in unit Top_level Conflict on KEEP property on signal N0 and UnidadeControle/s_placar1_mux0000<2> UnidadeControle/s_placar1_mux0000<2> signal will be lost.
+WARNING:Xst:1710 - FF/Latch <UnidadeControle/s_placar1_6> (without init value) has a constant value of 0 in block <Top_level>. This FF/Latch will be trimmed during the optimization process.
+WARNING:Xst:638 - in unit Top_level Conflict on KEEP property on signal N0 and UnidadeControle/s_placar1_mux0000<1> UnidadeControle/s_placar1_mux0000<1> signal will be lost.
+
+Optimizing unit <Top_level> ...
+
+Optimizing unit <multplex_displays> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Top_level, actual ratio is 6.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 91
+ Flip-Flops                                            : 91
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : Top_level.ngr
+Top Level Output File Name         : Top_level
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 43
+
+Cell Usage :
+# BELS                             : 256
+#      GND                         : 2
+#      INV                         : 3
+#      LUT1                        : 15
+#      LUT2                        : 18
+#      LUT2_D                      : 1
+#      LUT2_L                      : 5
+#      LUT3                        : 32
+#      LUT3_D                      : 2
+#      LUT3_L                      : 2
+#      LUT4                        : 116
+#      LUT4_D                      : 8
+#      LUT4_L                      : 19
+#      MUXCY                       : 15
+#      MUXF5                       : 1
+#      VCC                         : 1
+#      XORCY                       : 16
+# FlipFlops/Latches                : 91
+#      FD                          : 11
+#      FDC                         : 9
+#      FDE                         : 53
+#      FDP                         : 1
+#      FDS                         : 17
+# RAMS                             : 1
+#      RAMB16                      : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 41
+#      IBUF                        : 10
+#      OBUF                        : 31
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s200ft256-4 
+
+ Number of Slices:                      119  out of   1920     6%  
+ Number of Slice Flip Flops:             91  out of   3840     2%  
+ Number of 4 input LUTs:                221  out of   3840     5%  
+ Number of IOs:                          43
+ Number of bonded IOBs:                  42  out of    173    24%  
+ Number of BRAMs:                         1  out of     12     8%  
+ Number of GCLKs:                         1  out of      8    12%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+Clk                                | BUFGP                  | 92    |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+-----------------------------------+------------------------+-------+
+Control Signal                     | Buffer(FF name)        | Load  |
+-----------------------------------+------------------------+-------+
+Reset                              | IBUF                   | 10    |
+-----------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 10.606ns (Maximum Frequency: 94.286MHz)
+   Minimum input arrival time before clock: 5.054ns
+   Maximum output required time after clock: 7.241ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'Clk'
+  Clock period: 10.606ns (frequency: 94.286MHz)
+  Total number of paths / destination ports: 2761 / 122
+-------------------------------------------------------------------------
+Delay:               10.606ns (Levels of Logic = 5)
+  Source:            DisplayPlacar/contagem_13 (FF)
+  Destination:       DisplayPlacar/digito_0 (FF)
+  Source Clock:      Clk rising
+  Destination Clock: Clk rising
+
+  Data Path: DisplayPlacar/contagem_13 to DisplayPlacar/digito_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDS:C->Q              9   0.720   1.463  DisplayPlacar/contagem_13 (DisplayPlacar/contagem_13)
+     LUT4:I0->O            1   0.551   0.827  DisplayPlacar/contagem_cmp_eq000127 (DisplayPlacar/contagem_cmp_eq000127)
+     LUT4:I3->O            3   0.551   0.933  DisplayPlacar/contagem_cmp_eq0001224 (DisplayPlacar/digito_cmp_eq0001)
+     LUT4:I3->O           11   0.551   1.212  DisplayPlacar/digito_mux0000<0>21 (DisplayPlacar/N7)
+     LUT4:I2->O            1   0.551   0.869  DisplayPlacar/digito_mux0000<0>8_SW0_SW0 (N105)
+     LUT3:I2->O            1   0.551   0.801  DisplayPlacar/digito_mux0000<0>8 (DisplayPlacar/digito_mux0000<0>8)
+     FDS:S                     1.026          DisplayPlacar/digito_0
+    ----------------------------------------
+    Total                     10.606ns (4.501ns logic, 6.105ns route)
+                                       (42.4% logic, 57.6% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'Clk'
+  Total number of paths / destination ports: 100 / 84
+-------------------------------------------------------------------------
+Offset:              5.054ns (Levels of Logic = 2)
+  Source:            Reset (PAD)
+  Destination:       UnidadeControle/play2_1 (FF)
+  Destination Clock: Clk rising
+
+  Data Path: Reset to UnidadeControle/play2_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            14   0.821   1.187  Reset_IBUF (Reset_IBUF)
+     INV:I->O             39   0.551   1.893  Reset_inv1_INV_0 (Reset_inv1)
+     FDE:CE                    0.602          UnidadeControle/invalido
+    ----------------------------------------
+    Total                      5.054ns (1.974ns logic, 3.080ns route)
+                                       (39.1% logic, 60.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'Clk'
+  Total number of paths / destination ports: 31 / 31
+-------------------------------------------------------------------------
+Offset:              7.241ns (Levels of Logic = 1)
+  Source:            UnidadeControle/invalido (FF)
+  Destination:       Invalido (PAD)
+  Source Clock:      Clk rising
+
+  Data Path: UnidadeControle/invalido to Invalido
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              2   0.720   0.877  UnidadeControle/invalido (UnidadeControle/invalido)
+     OBUF:I->O                 5.644          Invalido_OBUF (Invalido)
+    ----------------------------------------
+    Total                      7.241ns (6.364ns logic, 0.877ns route)
+                                       (87.9% logic, 12.1% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 5.47 secs
+ 
+--> 
+
+Total memory usage is 267884 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :  119 (   0 filtered)
+Number of infos    :    8 (   0 filtered)
+

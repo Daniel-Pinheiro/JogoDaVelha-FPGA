@@ -1,0 +1,39 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Thu Dec 04 14:01:46 2014
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "Leds1<1>" LOCATE = SITE "K12" LEVEL 1;
+COMP "Digito<0>" LOCATE = SITE "E14" LEVEL 1;
+COMP "Leds1<2>" LOCATE = SITE "P14" LEVEL 1;
+COMP "Digito<1>" LOCATE = SITE "G13" LEVEL 1;
+COMP "Leds1<3>" LOCATE = SITE "L12" LEVEL 1;
+COMP "Digito<2>" LOCATE = SITE "N15" LEVEL 1;
+COMP "Leds1<4>" LOCATE = SITE "N14" LEVEL 1;
+COMP "Digito<3>" LOCATE = SITE "P15" LEVEL 1;
+COMP "Leds1<5>" LOCATE = SITE "P13" LEVEL 1;
+COMP "Digito<4>" LOCATE = SITE "R16" LEVEL 1;
+COMP "Leds1<6>" LOCATE = SITE "N12" LEVEL 1;
+COMP "Digito<5>" LOCATE = SITE "F13" LEVEL 1;
+COMP "Leds1<7>" LOCATE = SITE "P12" LEVEL 1;
+COMP "Digito<6>" LOCATE = SITE "N16" LEVEL 1;
+COMP "Leds1<8>" LOCATE = SITE "P11" LEVEL 1;
+COMP "Ponto" LOCATE = SITE "P16" LEVEL 1;
+COMP "Displays<0>" LOCATE = SITE "D14" LEVEL 1;
+COMP "Displays<1>" LOCATE = SITE "G14" LEVEL 1;
+COMP "Displays<2>" LOCATE = SITE "F14" LEVEL 1;
+COMP "Displays<3>" LOCATE = SITE "E13" LEVEL 1;
+COMP "Reset" LOCATE = SITE "M14" LEVEL 1;
+COMP "Jogada<1>" LOCATE = SITE "F12" LEVEL 1;
+COMP "Jogada<2>" LOCATE = SITE "G12" LEVEL 1;
+COMP "Jogada<3>" LOCATE = SITE "H14" LEVEL 1;
+COMP "Jogada<4>" LOCATE = SITE "H13" LEVEL 1;
+COMP "Jogada<5>" LOCATE = SITE "J14" LEVEL 1;
+COMP "Jogada<6>" LOCATE = SITE "J13" LEVEL 1;
+COMP "Jogada<7>" LOCATE = SITE "K14" LEVEL 1;
+COMP "Clk" LOCATE = SITE "T9" LEVEL 1;
+COMP "Jogada<8>" LOCATE = SITE "K13" LEVEL 1;
+COMP "Jogada<9>" LOCATE = SITE "M13" LEVEL 1;
+NET "Clk_BUFGP/IBUFG" BEL "Clk_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+SCHEMATIC END;
+

@@ -70,7 +70,7 @@ ARCHITECTURE behavior OF Top_tb IS
    signal Invalido : std_logic;
 
    -- Clock period definitions
-   constant Clk_period : time := 10 ps;
+   constant Clk_period : time := 1 ns;
  
 BEGIN
  
@@ -102,94 +102,94 @@ BEGIN
    stim_proc: process
    begin		
 
-      wait for Clk_period;
+      wait for Clk_period*10;
 		
       Jogada <= "100000000"; --Jogador 1
-		wait for Clk_period*10;
+		wait for Clk_period*100;
 
       Jogada <= "000000000";
-		wait for Clk_period*10;
+		wait for Clk_period*100;
 		
       Jogada <= "100000000"; --Jogador 2
-		wait for Clk_period*10;
+		wait for Clk_period*100;
 		
 		Jogada <= "000000000";
-		wait for Clk_period*10;
+		wait for Clk_period*100;
 		
       Jogada <= "100000000"; --Jogador 1
-		wait for Clk_period*10;
+		wait for Clk_period*100;
 		
       Jogada <= "000000000";
-		wait for Clk_period*10;
+		wait for Clk_period*100;
 		
       Jogada <= "000010000"; --Jogador 2
-		wait for Clk_period*10;
+		wait for Clk_period*100;
 		
       Jogada <= "000000000";
-		wait for Clk_period*10;
+		wait for Clk_period*100;
 		
       Jogada <= "010000000"; --Jogador 1
-		wait for Clk_period*10;
+		wait for Clk_period*100;
 		
       Jogada <= "000000000";
-		wait for Clk_period*10;
+		wait for Clk_period*100;
 		
       Jogada <= "000000001"; --Jogador 2
-		wait for Clk_period*10;
+		wait for Clk_period*100;
 		
 		
       Jogada <= "000000000";
-		wait for Clk_period*10;
+		wait for Clk_period*100;
 		
       Jogada <= "000000100"; --Jogador 1
-		wait for Clk_period*10;
+		wait for Clk_period*100;
 		
       Jogada <= "000000000";
-		wait for Clk_period*10;
+		wait for Clk_period*100;
 		
-      Jogada <= "00000100"; --Jogador 2
-		wait for Clk_period*10;
+      Jogada <= "000000100"; --Jogador 2
+		wait for Clk_period*100;
 		
 		
       Jogada <= "000000000";
-		wait for Clk_period*10;
+		wait for Clk_period*100;
 
       Jogada <= "001000000"; --Jogador 1
-		wait for Clk_period*10; --Jogador 1 ganha!
+		wait for Clk_period*100; --Jogador 1 ganha!
 		
 ------------------------------------------------Com a máquina------------
 		
 		Two_plays <= '0';
 		Reset <= '1';
-      wait for Clk_period;
+      wait for Clk_period*10;
 		
 		Reset <= '0';
       Jogada <= "100000000";
-		wait for Clk_period*10;
+		wait for Clk_period*100;
 
       Jogada <= "000000000";
-		wait for Clk_period*10;
+		wait for Clk_period*100;
 		
       Jogada <= "100000000";
-		wait for Clk_period*10;
+		wait for Clk_period*100;
 		
       Jogada <= "000000000";
-		wait for Clk_period*10;
+		wait for Clk_period*100;
 		
       Jogada <= "010000000";
-		wait for Clk_period*10;
+		wait for Clk_period*100;
 		
       Jogada <= "000000000";
-		wait for Clk_period*10;
+		wait for Clk_period*100;
 		
       Jogada <= "000000100";
-		wait for Clk_period*10;
+		wait for Clk_period*100;
 		
       Jogada <= "000000000";
-		wait for Clk_period*10;
+		wait for Clk_period*100;
 
       Jogada <= "001000000";
-		wait for Clk_period*10; --Jogador 1 ganha!
+		wait for Clk_period*100; --Jogador 1 ganha!
 				
       wait;
    end process;

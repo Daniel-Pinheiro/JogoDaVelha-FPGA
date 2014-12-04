@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\Aluno\Documents\Alunos\FPGA\2014\Projeto-SD2-master\Top_level.ncd
+OUTFILE=C:\Users\Aluno\Documents\Alunos\FPGA\2014\Projeto-SD2-master\Top_level.bit
+FAMILY=Spartan3
+PART=xc3s200-4ft256
+WORKINGDIR=C:\Users\Aluno\Documents\Alunos\FPGA\2014\Projeto-SD2-master
+LICENSE=WebPack
+USER_INFO=210650686_0_0_156

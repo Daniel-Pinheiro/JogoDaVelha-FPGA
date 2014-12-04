@@ -41,6 +41,19 @@ architecture Jogo_Velha of Top_level is
 				displays 										: out  STD_LOGIC_VECTOR(4 DOWNTO 1);
 				ponto 											: out  STD_LOGIC);
 	end component;
+	
+	component maquina is 
+		Port( jogada     : in std_logic_vector(9 downto 1);
+				two_plays  : in std_logic; 
+				reset      : in std_logic; 
+				leds1      : out std_logic_vector(9 downto 1);
+				leds2      : out std_logic_vector(9 downto 1);
+				invalido   : out std_logic; 
+				placar1    : out std_logic_vector(7 downto 0);
+				placar2    : out std_logic_vector(7 downto 0);
+				clk        : in std_logic
+			);
+	end component; 
 
 -----------------------------------------------------------------Sinais--------------------------------
 
@@ -68,18 +81,7 @@ begin
 -----------------------------------------------------------------Bloco logico-----------------------------------
 	
 	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	UnidadeControle: Maquina_Estados port map(Reset, Two_plays, Jogada, Leds1,Leds2, Invalido, placar1, placar2);
+	UnidadeControle: maquina port map(jogada, Two_plays, reset, Leds1,Leds2, Invalido, placar1, placar2, clk);
 -----------------------------------------------------------------Conexões do placar------------------------------
 
 	ConvPlacar1: conversor_binario_bcd port map(placar1, placar1_unidade, placar1_dezena);

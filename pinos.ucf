@@ -1,0 +1,37 @@
+NET "jogada<9>" LOC = M13;
+NET "jogada<8>" LOC = K13;
+NET "jogada<7>" LOC = K14;
+NET "jogada<6>" LOC = J13;
+NET "jogada<5>" LOC = J14;
+NET "jogada<4>" LOC = H13;
+NET "jogada<3>" LOC = H14;
+NET "jogada<2>" LOC = G12;
+NET "jogada<1>" LOC = F12;
+
+NET "LEDs1<8>" LOC = P11;
+NET "LEDs1<7>" LOC = P12;
+NET "LEDs1<6>" LOC = N12;
+NET "LEDs1<5>" LOC = P13;
+NET "LEDs1<4>" LOC = N14;
+NET "LEDs1<3>" LOC = L12;
+NET "LEDs1<2>" LOC = P14;
+NET "Invalido" LOC = K12;
+
+
+NET "digito<0>" LOC = E14;
+NET "digito<1>" LOC = G13;
+NET "digito<2>" LOC = N15;
+NET "digito<3>" LOC = P15;
+NET "digito<4>" LOC = R16;
+NET "digito<5>" LOC = F13;
+NET "digito<6>" LOC = N16;
+
+NET "displays<3>"  LOC = E13;
+NET "displays<2>"  LOC = F14;
+NET "displays<1>"  LOC = G14;
+NET "displays<0>"  LOC = D14;
+
+NET "reset"  LOC = M14;
+
+NET "ponto"  LOC = P16;
+NET "clk"  LOC = T9;
