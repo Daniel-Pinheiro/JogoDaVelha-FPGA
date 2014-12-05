@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -o "C:/Users/Aluno/Documents/Alunos/FPGA/2014/Projeto-SD2-master/FSM_tb_isim_beh.exe" -prj "C:/Users/Aluno/Documents/Alunos/FPGA/2014/Projeto-SD2-master/FSM_tb_beh.prj" "work.FSM_tb" 
+-intstyle "ise" -incremental -o "C:/Users/Daniel/Documents/UnB/Sistemas Digitais 2/Trabalhos/final/JogoDaVelha/FSM_tb_isim_beh.exe" -prj "C:/Users/Daniel/Documents/UnB/Sistemas Digitais 2/Trabalhos/final/JogoDaVelha/FSM_tb_beh.prj" "work.FSM_tb" 

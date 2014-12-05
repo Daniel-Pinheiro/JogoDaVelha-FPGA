@@ -1,36 +1,8 @@
---------------------------------------------------------------------------------
--- Company: 
--- Engineer:
---
--- Create Date:   14:10:55 12/04/2014
--- Design Name:   
--- Module Name:   C:/Users/Aluno/Documents/Alunos/FPGA/2014/Projeto-SD2-master/FSM-tb.vhd
--- Project Name:  SD2Projeto
--- Target Device:  
--- Tool versions:  
--- Description:   
--- 
--- VHDL Test Bench Created by ISE for module: maquina
--- 
--- Dependencies:
--- 
--- Revision:
--- Revision 0.01 - File Created
--- Additional Comments:
---
--- Notes: 
--- This testbench has been automatically generated using types std_logic and
--- std_logic_vector for the ports of the unit under test.  Xilinx recommends
--- that these types always be used for the top-level I/O of a design in order
--- to guarantee that the testbench will bind correctly to the post-implementation 
--- simulation model.
---------------------------------------------------------------------------------
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
  
 -- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values
---USE ieee.numeric_std.ALL;
+-- arithmetic functions with Signed or Unsigned values--USE ieee.numeric_std.ALL;
  
 ENTITY FSM_tb IS
 END FSM_tb;
@@ -146,12 +118,23 @@ BEGIN
       Jogada <= "000000100"; --Jogador 2
 		wait for Clk_period*10;
 		
-		
       Jogada <= "000000000";
 		wait for Clk_period*10;
 
+      Jogada <= "000001000"; --Jogador 1
+		wait for Clk_period*10; 
+		
+      Jogada <= "000000000";
+		wait for Clk_period*10;
+		
+      Jogada <= "001000000"; --Jogador 2
+		wait for Clk_period*10;
+      
+		Jogada <= "000000000";
+		wait for Clk_period*10;
+
       Jogada <= "001000000"; --Jogador 1
-		wait for Clk_period*10; --Jogador 1 ganha!
+		wait for Clk_period*20; --Jogador 1 ganha!
 		
 ------------------------------------------------Com a máquina------------
 		

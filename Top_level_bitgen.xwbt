@@ -1,8 +1,8 @@
 INTSTYLE=ise
-INFILE=C:\Users\Aluno\Documents\Alunos\FPGA\2014\Projeto-SD2-master\Top_level.ncd
-OUTFILE=C:\Users\Aluno\Documents\Alunos\FPGA\2014\Projeto-SD2-master\Top_level.bit
+INFILE=C:\Users\Daniel\Documents\UnB\Sistemas Digitais 2\Trabalhos\final\JogoDaVelha\Top_level.ncd
+OUTFILE=C:\Users\Daniel\Documents\UnB\Sistemas Digitais 2\Trabalhos\final\JogoDaVelha\Top_level.bit
 FAMILY=Spartan3
 PART=xc3s200-4ft256
-WORKINGDIR=C:\Users\Aluno\Documents\Alunos\FPGA\2014\Projeto-SD2-master
+WORKINGDIR=C:\Users\Daniel\Documents\UnB\Sistemas Digitais 2\Trabalhos\final\JogoDaVelha
 LICENSE=WebPack
-USER_INFO=210650686_0_0_156
+USER_INFO=210928963_0_0_277

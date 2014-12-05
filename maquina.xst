@@ -1,5 +1,0 @@
-set -tmpdir "C:/Users/Aluno/Documents/Alunos/FPGA/2014/Projeto-SD2-master/xst/projnav.tmp"
-set -xsthdpdir "C:/Users/Aluno/Documents/Alunos/FPGA/2014/Projeto-SD2-master/xst"
-elaborate
--ifn maquina.prj
--ifmt mixed

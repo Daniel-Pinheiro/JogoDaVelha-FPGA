@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "C:/Users/Aluno/Documents/Alunos/FPGA/2014/Projeto-SD2-master/contador_50Mhz_1s.vhd";
+static const char *ng0 = "C:/Users/Daniel/Documents/UnB/Sistemas Digitais 2/Trabalhos/final/JogoDaVelha/contador_50Mhz_1s.vhd";
 extern char *IEEE_P_2592010699;
 
 unsigned char ieee_p_2592010699_sub_1744673427_503743352(char *, char *, unsigned int , unsigned int );
@@ -66,7 +66,7 @@ LAB2:    xsi_set_current_line(49, ng0);
     t6 = *((char **)t5);
     t7 = (t6 + 56U);
     t8 = *((char **)t7);
-    *((int *)t8) = 499999;
+    *((int *)t8) = 49999999;
     xsi_driver_first_trans_fast(t1);
     goto LAB3;
 
@@ -99,7 +99,7 @@ LAB7:    xsi_set_current_line(52, ng0);
     t7 = *((char **)t6);
     t8 = (t7 + 56U);
     t10 = *((char **)t8);
-    *((int *)t10) = 499999;
+    *((int *)t10) = 49999999;
     xsi_driver_first_trans_fast(t2);
     goto LAB8;
 

@@ -2,7 +2,7 @@
 Release 14.7 Trace  (nt64)
 Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
-C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 4
+c:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 4
 -n 3 -fastpaths -xml Top_level.twx Top_level.ncd -o Top_level.twr Top_level.pcf
 -ucf pinos.ucf
 
@@ -45,16 +45,16 @@ Setup/Hold to clock Clk
             |Max Setup to|Max Hold to |                  | Clock  |
 Source      | clk (edge) | clk (edge) |Internal Clock(s) | Phase  |
 ------------+------------+------------+------------------+--------+
-Jogada<1>   |    3.286(R)|    0.316(R)|Clk_BUFGP         |   0.000|
-Jogada<2>   |    3.192(R)|    0.273(R)|Clk_BUFGP         |   0.000|
-Jogada<3>   |    3.069(R)|    0.446(R)|Clk_BUFGP         |   0.000|
-Jogada<4>   |    2.735(R)|    0.726(R)|Clk_BUFGP         |   0.000|
-Jogada<5>   |    2.102(R)|    1.026(R)|Clk_BUFGP         |   0.000|
-Jogada<6>   |    2.568(R)|    1.068(R)|Clk_BUFGP         |   0.000|
-Jogada<7>   |    2.264(R)|    1.072(R)|Clk_BUFGP         |   0.000|
-Jogada<8>   |    2.049(R)|    0.912(R)|Clk_BUFGP         |   0.000|
-Jogada<9>   |    2.441(R)|    0.736(R)|Clk_BUFGP         |   0.000|
-Reset       |    6.960(R)|    0.583(R)|Clk_BUFGP         |   0.000|
+Jogada<1>   |    8.696(R)|   -0.430(R)|Clk_BUFGP         |   0.000|
+Jogada<2>   |    7.108(R)|   -0.421(R)|Clk_BUFGP         |   0.000|
+Jogada<3>   |    8.608(R)|   -1.100(R)|Clk_BUFGP         |   0.000|
+Jogada<4>   |    8.762(R)|   -1.020(R)|Clk_BUFGP         |   0.000|
+Jogada<5>   |    7.891(R)|   -0.463(R)|Clk_BUFGP         |   0.000|
+Jogada<6>   |    8.118(R)|   -0.105(R)|Clk_BUFGP         |   0.000|
+Jogada<7>   |    6.078(R)|   -0.525(R)|Clk_BUFGP         |   0.000|
+Jogada<8>   |    6.754(R)|    0.188(R)|Clk_BUFGP         |   0.000|
+Jogada<9>   |    7.149(R)|   -0.043(R)|Clk_BUFGP         |   0.000|
+Reset       |    4.591(R)|    0.078(R)|Clk_BUFGP         |   0.000|
 ------------+------------+------------+------------------+--------+
 
 Clock Clk to Pad
@@ -62,37 +62,37 @@ Clock Clk to Pad
             | clk (edge) |                  | Clock  |
 Destination |   to PAD   |Internal Clock(s) | Phase  |
 ------------+------------+------------------+--------+
-Digito<0>   |   10.434(R)|Clk_BUFGP         |   0.000|
-Digito<1>   |   10.223(R)|Clk_BUFGP         |   0.000|
-Digito<2>   |   11.319(R)|Clk_BUFGP         |   0.000|
-Digito<3>   |   11.428(R)|Clk_BUFGP         |   0.000|
-Digito<4>   |   11.495(R)|Clk_BUFGP         |   0.000|
-Digito<5>   |   10.102(R)|Clk_BUFGP         |   0.000|
-Digito<6>   |   11.205(R)|Clk_BUFGP         |   0.000|
-Displays<0> |    9.728(R)|Clk_BUFGP         |   0.000|
-Displays<1> |    9.729(R)|Clk_BUFGP         |   0.000|
-Displays<2> |    9.656(R)|Clk_BUFGP         |   0.000|
-Displays<3> |   10.168(R)|Clk_BUFGP         |   0.000|
-Invalido    |    9.931(R)|Clk_BUFGP         |   0.000|
-Leds1<1>    |    9.128(R)|Clk_BUFGP         |   0.000|
-Leds1<2>    |    9.260(R)|Clk_BUFGP         |   0.000|
-Leds1<3>    |    9.146(R)|Clk_BUFGP         |   0.000|
-Leds1<4>    |    9.094(R)|Clk_BUFGP         |   0.000|
-Leds1<5>    |    9.076(R)|Clk_BUFGP         |   0.000|
-Leds1<6>    |    9.796(R)|Clk_BUFGP         |   0.000|
-Leds1<7>    |    9.713(R)|Clk_BUFGP         |   0.000|
-Leds1<8>    |    9.836(R)|Clk_BUFGP         |   0.000|
-Leds1<9>    |    9.148(R)|Clk_BUFGP         |   0.000|
-Leds2<1>    |    8.405(R)|Clk_BUFGP         |   0.000|
-Leds2<2>    |    9.615(R)|Clk_BUFGP         |   0.000|
-Leds2<3>    |    9.139(R)|Clk_BUFGP         |   0.000|
-Leds2<4>    |    8.445(R)|Clk_BUFGP         |   0.000|
-Leds2<5>    |    8.436(R)|Clk_BUFGP         |   0.000|
-Leds2<6>    |    9.246(R)|Clk_BUFGP         |   0.000|
-Leds2<7>    |    9.646(R)|Clk_BUFGP         |   0.000|
-Leds2<8>    |    8.812(R)|Clk_BUFGP         |   0.000|
-Leds2<9>    |    8.432(R)|Clk_BUFGP         |   0.000|
-Ponto       |   10.918(R)|Clk_BUFGP         |   0.000|
+Digito<0>   |   10.165(R)|Clk_BUFGP         |   0.000|
+Digito<1>   |   10.950(R)|Clk_BUFGP         |   0.000|
+Digito<2>   |   10.913(R)|Clk_BUFGP         |   0.000|
+Digito<3>   |   10.271(R)|Clk_BUFGP         |   0.000|
+Digito<4>   |   10.589(R)|Clk_BUFGP         |   0.000|
+Digito<5>   |   10.525(R)|Clk_BUFGP         |   0.000|
+Digito<6>   |   10.296(R)|Clk_BUFGP         |   0.000|
+Displays<0> |   10.521(R)|Clk_BUFGP         |   0.000|
+Displays<1> |   10.365(R)|Clk_BUFGP         |   0.000|
+Displays<2> |   10.173(R)|Clk_BUFGP         |   0.000|
+Displays<3> |   10.479(R)|Clk_BUFGP         |   0.000|
+Invalido    |   10.491(R)|Clk_BUFGP         |   0.000|
+Leds1<1>    |    9.401(R)|Clk_BUFGP         |   0.000|
+Leds1<2>    |   11.303(R)|Clk_BUFGP         |   0.000|
+Leds1<3>    |   10.643(R)|Clk_BUFGP         |   0.000|
+Leds1<4>    |   10.819(R)|Clk_BUFGP         |   0.000|
+Leds1<5>    |   10.526(R)|Clk_BUFGP         |   0.000|
+Leds1<6>    |    9.923(R)|Clk_BUFGP         |   0.000|
+Leds1<7>    |    9.632(R)|Clk_BUFGP         |   0.000|
+Leds1<8>    |    9.910(R)|Clk_BUFGP         |   0.000|
+Leds1<9>    |    8.432(R)|Clk_BUFGP         |   0.000|
+Leds2<1>    |    9.111(R)|Clk_BUFGP         |   0.000|
+Leds2<2>    |    8.405(R)|Clk_BUFGP         |   0.000|
+Leds2<3>    |    9.480(R)|Clk_BUFGP         |   0.000|
+Leds2<4>    |    9.667(R)|Clk_BUFGP         |   0.000|
+Leds2<5>    |    9.133(R)|Clk_BUFGP         |   0.000|
+Leds2<6>    |    8.773(R)|Clk_BUFGP         |   0.000|
+Leds2<7>    |    8.432(R)|Clk_BUFGP         |   0.000|
+Leds2<8>    |    8.405(R)|Clk_BUFGP         |   0.000|
+Leds2<9>    |    9.463(R)|Clk_BUFGP         |   0.000|
+Ponto       |   11.140(R)|Clk_BUFGP         |   0.000|
 ------------+------------+------------------+--------+
 
 Clock to Setup on destination clock Clk
@@ -100,18 +100,18 @@ Clock to Setup on destination clock Clk
                | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
 Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
 ---------------+---------+---------+---------+---------+
-Clk            |    8.444|         |         |         |
+Clk            |    7.768|         |         |         |
 ---------------+---------+---------+---------+---------+
 
 
-Analysis completed Thu Dec 04 14:01:58 2014 
+Analysis completed Fri Dec 05 03:52:39 2014 
 --------------------------------------------------------------------------------
 
 Trace Settings:
 -------------------------
 Trace Settings 
 
-Peak Memory Usage: 142 MB
+Peak Memory Usage: 140 MB
 
 
 

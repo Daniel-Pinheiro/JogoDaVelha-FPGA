@@ -1,11 +1,11 @@
-Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o C:/Users/Aluno/Documents/Alunos/FPGA/2014/Projeto-SD2-master/FSM_tb_isim_beh.exe -prj C:/Users/Aluno/Documents/Alunos/FPGA/2014/Projeto-SD2-master/FSM_tb_beh.prj work.FSM_tb 
+Running: c:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -o C:/Users/Daniel/Documents/UnB/Sistemas Digitais 2/Trabalhos/final/JogoDaVelha/FSM_tb_isim_beh.exe -prj C:/Users/Daniel/Documents/UnB/Sistemas Digitais 2/Trabalhos/final/JogoDaVelha/FSM_tb_beh.prj work.FSM_tb 
 ISim P.20131013 (signature 0x7708f090)
 Number of CPUs detected in this system: 4
 Turning on mult-threading, number of parallel sub-compilation jobs: 8 
 Determining compilation order of HDL files
-Parsing VHDL file "C:/Users/Aluno/Documents/Alunos/FPGA/2014/Projeto-SD2-master/contador_50Mhz_1s.vhd" into library work
-Parsing VHDL file "C:/Users/Aluno/Documents/Alunos/FPGA/2014/Projeto-SD2-master/maquina.vhd" into library work
-Parsing VHDL file "C:/Users/Aluno/Documents/Alunos/FPGA/2014/Projeto-SD2-master/FSM-tb.vhd" into library work
+Parsing VHDL file "C:/Users/Daniel/Documents/UnB/Sistemas Digitais 2/Trabalhos/final/JogoDaVelha/contador_50Mhz_1s.vhd" into library work
+Parsing VHDL file "C:/Users/Daniel/Documents/UnB/Sistemas Digitais 2/Trabalhos/final/JogoDaVelha/maquina.vhd" into library work
+Parsing VHDL file "C:/Users/Daniel/Documents/UnB/Sistemas Digitais 2/Trabalhos/final/JogoDaVelha/FSM-tb.vhd" into library work
 Starting static elaboration
 Completed static elaboration
 Compiling package standard
@@ -16,8 +16,7 @@ Compiling architecture behavioral of entity conta_1s [conta_1s_default]
 Compiling architecture behavioral of entity maquina [maquina_default]
 Compiling architecture behavior of entity fsm_tb
 Time Resolution for simulation is 1ps.
-Waiting for 1 sub-compilation(s) to finish...
 Compiled 9 VHDL Units
-Built simulation executable C:/Users/Aluno/Documents/Alunos/FPGA/2014/Projeto-SD2-master/FSM_tb_isim_beh.exe
-Fuse Memory Usage: 33492 KB
-Fuse CPU Usage: 452 ms
+Built simulation executable C:/Users/Daniel/Documents/UnB/Sistemas Digitais 2/Trabalhos/final/JogoDaVelha/FSM_tb_isim_beh.exe
+Fuse Memory Usage: 33336 KB
+Fuse CPU Usage: 1450 ms

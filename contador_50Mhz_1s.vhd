@@ -38,7 +38,7 @@ end conta_1s;
 
 architecture Behavioral of conta_1s is
 
-signal count500000 : integer range 0 to 499999;
+signal count500000 : integer range 0 to 49999999;
 signal clk_100hz : std_logic := '0'; 
 signal pb_sampled : std_logic; 
 
@@ -46,10 +46,10 @@ begin
 	div_100Hz : process (clk, começa) is
 	begin 
 		if começa = '1' then 
-			count500000 <= 499999;
+			count500000 <= 49999999;
 		elsif rising_edge(clk) then 
 			if clk_100Hz = '1' then
-				count500000 <= 499999;
+				count500000 <= 49999999;
 			else 
 				count500000 <= count500000 - 1;
 			end if;	

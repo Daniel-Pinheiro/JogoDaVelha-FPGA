@@ -1,3 +1,0 @@
-vhdl isim_temp "contador_50Mhz_1s.vhd"
-vhdl isim_temp "maquina.vhd"
-vhdl isim_temp "FSM-tb.vhd"
