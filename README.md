@@ -1,11 +1,12 @@
-Jogo da Velha em FPGA com matriz de leds e pushbuttons 3x3
+# Jogo da Velha em FPGA com matriz de leds e pushbuttons 3x3
 
-Código fonte + testbench
-Linguagem: VHDL
-Algoritmo: High Level FSM - modelo Moore
-FPGA: Spartan 3 xc3s200-4ft256
-Ambiente: Xilinx ISE 14
+<p>CÃ³digo fonte + testbench</p>
+<p>Linguagem: VHDL</p>
+<p>Algoritmo: High Level FSM - modelo Moore</p>
+<p>FPGA: Spartan 3 xc3s200-4ft256</p>
+<p>Ambiente: Xilinx ISE 14</p>
 
-<img src="maquina_velha-principal.png">
-
+<br/>
+<img src="maquina_velha-principal.png" position="center">
+<br/><br/>
 <img src="maquina_velha-verifica.png">
