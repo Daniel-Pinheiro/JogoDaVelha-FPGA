@@ -1,8 +1,0 @@
-INTSTYLE=ise
-INFILE=C:\Users\Daniel\Documents\UnB\Sistemas Digitais 2\Trabalhos\final\JogoDaVelha\Top_level.ncd
-OUTFILE=C:\Users\Daniel\Documents\UnB\Sistemas Digitais 2\Trabalhos\final\JogoDaVelha\Top_level.bit
-FAMILY=Spartan3
-PART=xc3s200-4ft256
-WORKINGDIR=C:\Users\Daniel\Documents\UnB\Sistemas Digitais 2\Trabalhos\final\JogoDaVelha
-LICENSE=WebPack
-USER_INFO=210928963_0_0_277

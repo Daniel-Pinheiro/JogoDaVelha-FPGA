@@ -1,8 +1,13 @@
+-------------------------------------------------------------------------------------------------------
+
+ -- Autor: Daniel Borges
+ -- Versão: 1.0 - 2014
+
+-------------------------------------------------------------------------------------------------------
+
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;
  
--- Uncomment the following library declaration if using
--- arithmetic functions with Signed or Unsigned values--USE ieee.numeric_std.ALL;
  
 ENTITY FSM_tb IS
 END FSM_tb;

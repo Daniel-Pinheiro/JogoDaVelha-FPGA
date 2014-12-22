@@ -1,7 +1,0 @@
-vhdl work "contador_50Mhz_1s.vhd"
-vhdl work "multplex_displays.vhd"
-vhdl work "maquina.vhd"
-vhdl work "decodificador_7.vhd"
-vhdl work "debouncer.vhd"
-vhdl work "conversor_bcd.vhd"
-vhdl work "top_lvl.vhd"
